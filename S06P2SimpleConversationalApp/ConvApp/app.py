@@ -1,5 +1,9 @@
 
 import streamlit as st
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 
 from langchain.chat_models import ChatOpenAI
@@ -38,7 +42,7 @@ def get_text():
     return input_text
 
 
-chat = ChatOpenAI(temperature=0)
+chat = ChatOpenAI(temperature=0, openai_api_key=os.getenv("OPENAI_API_KEY"))
 
 
 
