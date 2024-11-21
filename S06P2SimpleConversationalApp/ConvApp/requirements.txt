@@ -3,3 +3,4 @@ langchain
 openai
 streamlit-chat
 python-dotenv
+langchain-community
