@@ -1,2 +1,8 @@
-.venv
-C:\CloudRepositories\GitHub\LangChain-MasterClass\S06P2SimpleConversationalApp\ConvApp\.venv
+# Ignore Python-specific files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+env/
+venv/
