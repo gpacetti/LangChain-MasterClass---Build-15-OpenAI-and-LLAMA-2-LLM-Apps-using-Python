@@ -1,14 +1,15 @@
 import streamlit as st
-from langchain.llms import OpenAI
 from langchain.prompts import PromptTemplate
 from langchain import FewShotPromptTemplate
 from langchain.prompts.example_selector import LengthBasedExampleSelector
 from dotenv import load_dotenv
+from langchain_community.llms import OpenAI
+
 
 load_dotenv()
 
 def getLLMResponse(query,age_option,tasktype_option):
-    llm = OpenAI(temperature=.9, model="text-davinci-003")
+    llm = OpenAI(temperature=.9, model="gpt-3.5-turbo-instruct")
 
     if age_option=="Kid": #Silly and Sweet Kid 
 
